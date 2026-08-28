@@ -15,19 +15,65 @@ body {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+.meta-input-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 button {
-  background-color: #007bff;
+  background-color: #28a745; /* Verde para 'Adicionar' */
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 15px;
+  transition: background-color 0.2s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #218838;
+}
+
+#listaMetas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#listaMetas li {
+  background-color: #f8f9fa;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listaMetas li button.btn-remover {
+  background-color: #dc3545; /* Vermelho para 'Remover' */
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#listaMetas li button.btn-remover:hover {
+  background-color: #c82333;
 }
