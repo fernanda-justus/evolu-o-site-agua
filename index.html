@@ -1,26 +1,1590 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Plano de 5 Anos</title>
+
+  <title>HydraLife – Consumo Inteligente de Água</title>
+
+  <meta name="description"
+    content="HydraLife é um projeto sobre hidratação, consumo inteligente de água e criação de hábitos saudáveis.">
+
+  <!-- CSS EXTERNO -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <main class="container">
-    <h1>Metas do Meu Plano</h1>
-    <p>Adicione suas prioridades para os próximos 5 anos abaixo.</p>
-    
-    <div class="meta-input-container">
-      <input type="text" id="novaMetaInput" placeholder="Ex: Fazer curso de IA ou Estudar Espanhol">
-      <button id="btnAdicionar">Adicionar</button>
+  <!-- =========================
+       HEADER / MENU
+       ========================= -->
+
+  <header id="header">
+
+    <div class="container nav">
+
+      <a href="#hero" class="logo">
+        <span class="logo-icon">💧</span>
+        Hydra<span class="accent">Life</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="#importancia">Importância</a>
+        </li>
+
+        <li>
+          <a href="#impactos">Impactos</a>
+        </li>
+
+        <li>
+          <a href="#pesquisa">Pesquisa</a>
+        </li>
+
+        <li>
+          <a href="#solucao">Solução</a>
+        </li>
+
+        <li>
+          <a href="#simulador">Simulador</a>
+        </li>
+
+        <li>
+          <a href="#desafio">Desafio</a>
+        </li>
+
+        <li>
+          <a href="#ranking">Ranking</a>
+        </li>
+
+        <li>
+          <a href="#dicas">Dicas</a>
+        </li>
+
+      </ul>
+
     </div>
 
-    <ul id="listaMetas">
-      </ul>
-  </main>
+  </header>
 
+
+  <!-- =========================
+       HERO
+       ========================= -->
+
+  <section class="hero" id="hero">
+
+    <div class="container hero-grid">
+
+      <div class="hero-text">
+
+        <span class="badge">
+          💧 Consumo Inteligente de Água
+        </span>
+
+        <h1>
+          Beba mais água.
+          <span class="highlight">Viva melhor.</span>
+        </h1>
+
+        <p>
+          Milhões de pessoas consomem menos água do que precisam todos os dias,
+          muitas vezes sem perceber. O HydraLife nasceu para transformar a
+          hidratação em um hábito simples, consciente e sustentável.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#solucao" class="btn btn-primary">
+            Conheça a solução →
+          </a>
+
+          <a href="#pesquisa" class="btn btn-outline">
+            Ver pesquisa
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="drop"></div>
+
+        <div class="ripple"></div>
+
+      </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+      Role para baixo
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       IMPORTÂNCIA
+       ========================= -->
+
+  <section class="importancia" id="importancia">
+
+    <div class="container">
+
+      <div class="grid-2">
+
+        <div class="reveal">
+
+          <span class="badge">
+            Por que se hidratar?
+          </span>
+
+          <h2>
+            A água é essencial para o funcionamento do nosso corpo.
+          </h2>
+
+          <p>
+            Cerca de 60% do corpo humano é composto por água. Ela participa
+            da regulação da temperatura, transporte de nutrientes e funcionamento
+            de diversos órgãos.
+          </p>
+
+          <p>
+            Beber pouca água pode contribuir para a desidratação e afetar
+            a disposição, concentração e bem-estar durante o dia.
+          </p>
+
+          <ul class="lista-check">
+
+            <li>
+              <span class="check">✓</span>
+              Melhora foco, memória e concentração.
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Ajuda a manter a disposição.
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Auxilia na digestão.
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Contribui para o funcionamento do organismo.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="imp-visual reveal delay-2">
+
+          <h3>
+            Riscos da baixa hidratação
+          </h3>
+
+          <p>
+            Poucos copos por dia podem parecer inofensivos,
+            mas a falta de hidratação pode afetar a rotina.
+          </p>
+
+          <div class="stat-row">
+
+            <div class="stat">
+
+              <div class="num">
+                <span class="counter" data-target="60">0</span>%
+              </div>
+
+              <div class="lbl">
+                do corpo é água
+              </div>
+
+            </div>
+
+
+            <div class="stat">
+
+              <div class="num">
+                <span class="counter" data-target="2">0</span>L
+              </div>
+
+              <div class="lbl">
+                referência usada no projeto
+              </div>
+
+            </div>
+
+
+            <div class="stat">
+
+              <div class="num">
+                <span class="counter" data-target="75">0</span>%
+              </div>
+
+              <div class="lbl">
+                dos participantes relataram baixo consumo
+              </div>
+
+            </div>
+
+
+            <div class="stat">
+
+              <div class="num">
+                <span class="counter" data-target="30">0</span>%
+              </div>
+
+              <div class="lbl">
+                impacto percebido no foco
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       IMPACTOS
+       ========================= -->
+
+  <section id="impactos" class="impactos">
+
+    <div class="container">
+
+      <span class="badge center-badge reveal">
+        Impactos
+      </span>
+
+      <h2 class="section-title reveal">
+        Principais impactos da desidratação
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Beber pouca água pode afetar muito mais do que a sede.
+        Veja alguns dos impactos relacionados à baixa hidratação.
+      </p>
+
+
+      <div class="cards-grid">
+
+        <div class="card reveal delay-1">
+
+          <div class="card-icon">
+            😴
+          </div>
+
+          <h3>
+            Cansaço
+          </h3>
+
+          <p>
+            A baixa ingestão de água pode estar associada à sensação
+            de cansaço e indisposição.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-2">
+
+          <div class="card-icon">
+            🤕
+          </div>
+
+          <h3>
+            Dor de cabeça
+          </h3>
+
+          <p>
+            A desidratação pode estar relacionada ao surgimento
+            de dores de cabeça em algumas situações.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-3">
+
+          <div class="card-icon">
+            🧠
+          </div>
+
+          <h3>
+            Concentração
+          </h3>
+
+          <p>
+            Manter-se hidratado ajuda a preservar o funcionamento
+            adequado do organismo durante atividades do dia.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-1">
+
+          <div class="card-icon">
+            📉
+          </div>
+
+          <h3>
+            Produtividade
+          </h3>
+
+          <p>
+            Cansaço e falta de disposição podem prejudicar
+            o rendimento nos estudos e no trabalho.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-2">
+
+          <div class="card-icon">
+            ❤️
+          </div>
+
+          <h3>
+            Saúde
+          </h3>
+
+          <p>
+            A hidratação adequada faz parte de uma rotina
+            de cuidados com o organismo.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-3">
+
+          <div class="card-icon">
+            💤
+          </div>
+
+          <h3>
+            Bem-estar
+          </h3>
+
+          <p>
+            Criar uma rotina de hidratação pode contribuir
+            para uma sensação geral de bem-estar.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PESQUISA
+       ========================= -->
+
+  <section class="pesquisa" id="pesquisa">
+
+    <div class="container">
+
+      <span class="badge center-badge reveal">
+        Nossa pesquisa
+      </span>
+
+      <h2 class="section-title reveal">
+        O que descobrimos com 30 participantes
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Realizamos uma pesquisa com 30 pessoas para entender
+        como está o consumo diário de água e quais são as principais
+        dificuldades para manter esse hábito.
+      </p>
+
+
+      <div class="pesquisa-header">
+
+        <div class="stat-block reveal delay-1">
+
+          <div class="big">
+            <span class="counter" data-target="30">0</span>
+          </div>
+
+          <div class="lbl">
+            Participantes
+          </div>
+
+        </div>
+
+
+        <div class="stat-block reveal delay-2">
+
+          <div class="big">
+            <span class="counter" data-target="73">0</span>%
+          </div>
+
+          <div class="lbl">
+            bebem menos de 2L/dia
+          </div>
+
+        </div>
+
+
+        <div class="stat-block reveal delay-3">
+
+          <div class="big">
+            <span class="counter" data-target="80">0</span>%
+          </div>
+
+          <div class="lbl">
+            esquecem na rotina
+          </div>
+
+        </div>
+
+
+        <div class="stat-block reveal delay-4">
+
+          <div class="big">
+            <span class="counter" data-target="90">0</span>%
+          </div>
+
+          <div class="lbl">
+            querem lembretes
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="cards-grid">
+
+        <div class="card reveal delay-1">
+
+          <div class="card-icon">
+            🥤
+          </div>
+
+          <h3>
+            Consumo abaixo do ideal
+          </h3>
+
+          <p>
+            A maioria dos participantes informou consumir
+            menos de 2 litros de água por dia.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-2">
+
+          <div class="card-icon">
+            ⏰
+          </div>
+
+          <h3>
+            Esquecimento na rotina
+          </h3>
+
+          <p>
+            Muitos participantes disseram que se envolvem
+            com outras tarefas e acabam esquecendo de beber água.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-3">
+
+          <div class="card-icon">
+            🥤
+          </div>
+
+          <h3>
+            Outras bebidas
+          </h3>
+
+          <p>
+            Refrigerantes, sucos, cafés e outras bebidas
+            podem acabar substituindo a água.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-4">
+
+          <div class="card-icon">
+            🔔
+          </div>
+
+          <h3>
+            Lembretes ajudariam
+          </h3>
+
+          <p>
+            A maioria dos participantes acredita que lembretes
+            ajudariam a criar o hábito.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- GRÁFICOS -->
+
+      <div class="charts">
+
+
+        <div class="chart-card reveal">
+
+          <h3>
+            Quantos litros bebem por dia?
+          </h3>
+
+          <div class="bar-chart">
+
+            <div class="bar-item">
+
+              <div class="bar-label">
+                <span>Menos de 1L</span>
+                <span>27%</span>
+              </div>
+
+              <div class="bar-track">
+                <div class="bar-fill" data-w="27"></div>
+              </div>
+
+            </div>
+
+
+            <div class="bar-item">
+
+              <div class="bar-label">
+                <span>Entre 1L e 2L</span>
+                <span>46%</span>
+              </div>
+
+              <div class="bar-track">
+                <div class="bar-fill" data-w="46"></div>
+              </div>
+
+            </div>
+
+
+            <div class="bar-item">
+
+              <div class="bar-label">
+                <span>Entre 2L e 3L</span>
+                <span>20%</span>
+              </div>
+
+              <div class="bar-track">
+                <div class="bar-fill verde" data-w="20"></div>
+              </div>
+
+            </div>
+
+
+            <div class="bar-item">
+
+              <div class="bar-label">
+                <span>Mais de 3L</span>
+                <span>7%</span>
+              </div>
+
+              <div class="bar-track">
+                <div class="bar-fill verde" data-w="7"></div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="chart-card reveal delay-2">
+
+          <h3>
+            Esquecem de beber água?
+          </h3>
+
+          <div class="donut-wrap">
+
+            <div class="donut" id="donut">
+
+              <span id="donutValue">
+                0%
+              </span>
+
+            </div>
+
+
+            <div class="donut-legend">
+
+              <div>
+                <span class="dot"></span>
+                Sim, esquecem — 80%
+              </div>
+
+              <div>
+                <span class="dot gray"></span>
+                Não esquecem — 20%
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="chart-card reveal">
+
+          <h3>
+            Substituem água por outras bebidas?
+          </h3>
+
+          <div class="col-chart" id="colChart">
+
+            <div class="col">
+
+              <div class="col-bar" data-h="65">
+                <span>65%</span>
+              </div>
+
+              <div class="col-label">
+                Refrigerantes
+              </div>
+
+            </div>
+
+
+            <div class="col">
+
+              <div class="col-bar" data-h="55">
+                <span>55%</span>
+              </div>
+
+              <div class="col-label">
+                Sucos
+              </div>
+
+            </div>
+
+
+            <div class="col">
+
+              <div class="col-bar" data-h="70">
+                <span>70%</span>
+              </div>
+
+              <div class="col-label">
+                Cafés
+              </div>
+
+            </div>
+
+
+            <div class="col">
+
+              <div class="col-bar" data-h="35">
+                <span>35%</span>
+              </div>
+
+              <div class="col-label">
+                Chás
+              </div>
+
+            </div>
+
+
+            <div class="col">
+
+              <div class="col-bar" data-h="20">
+                <span>20%</span>
+              </div>
+
+              <div class="col-label">
+                Nenhuma
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="chart-card reveal delay-2">
+
+          <h3>
+            Usariam um app com lembretes?
+          </h3>
+
+          <div class="bar-chart">
+
+            <div class="bar-item">
+
+              <div class="bar-label">
+                <span>Sim, com certeza</span>
+                <span>90%</span>
+              </div>
+
+              <div class="bar-track">
+
+                <div class="bar-fill verde" data-w="90"></div>
+
+              </div>
+
+            </div>
+
+
+            <div class="bar-item">
+
+              <div class="bar-label">
+                <span>Talvez</span>
+                <span>7%</span>
+              </div>
+
+              <div class="bar-track">
+
+                <div class="bar-fill" data-w="7"></div>
+
+              </div>
+
+            </div>
+
+
+            <div class="bar-item">
+
+              <div class="bar-label">
+                <span>Não</span>
+                <span>3%</span>
+              </div>
+
+              <div class="bar-track">
+
+                <div class="bar-fill" data-w="3"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="analise reveal">
+
+        <h3>
+          📊 Análise dos resultados
+        </h3>
+
+        <p>
+          Os dados mostram que uma parte significativa dos participantes
+          consome menos água do que gostaria, principalmente por esquecer
+          durante a rotina. A pesquisa também mostrou interesse em
+          lembretes e ferramentas digitais.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SOLUÇÃO
+       ========================= -->
+
+  <section class="solucao" id="solucao">
+
+    <div class="container">
+
+      <span class="badge center-badge reveal">
+        Nossa solução
+      </span>
+
+      <h2 class="section-title reveal">
+        HydraLife — hidratação inteligente
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Um aplicativo pensado para transformar o consumo de água
+        em um hábito leve, motivador e presente na rotina.
+      </p>
+
+
+      <div class="cards-grid">
+
+        <div class="feature-card reveal delay-1">
+
+          <div class="card-icon">
+            🔔
+          </div>
+
+          <h3>
+            Lembretes inteligentes
+          </h3>
+
+          <p>
+            Notificações personalizadas para lembrar você
+            de beber água nos momentos certos.
+          </p>
+
+        </div>
+
+
+        <div class="feature-card reveal delay-2">
+
+          <div class="card-icon">
+            🎯
+          </div>
+
+          <h3>
+            Metas diárias
+          </h3>
+
+          <p>
+            Definição de uma meta diária de hidratação
+            para acompanhar seu progresso.
+          </p>
+
+        </div>
+
+
+        <div class="feature-card reveal delay-3">
+
+          <div class="card-icon">
+            📈
+          </div>
+
+          <h3>
+            Controle de consumo
+          </h3>
+
+          <p>
+            Registre cada copo e acompanhe sua evolução
+            ao longo do dia.
+          </p>
+
+        </div>
+
+
+        <div class="feature-card reveal delay-1">
+
+          <div class="card-icon">
+            📅
+          </div>
+
+          <h3>
+            Histórico
+          </h3>
+
+          <p>
+            Visualize sua evolução e acompanhe seu desempenho.
+          </p>
+
+        </div>
+
+
+        <div class="feature-card reveal delay-2">
+
+          <div class="card-icon">
+            💡
+          </div>
+
+          <h3>
+            Dicas de saúde
+          </h3>
+
+          <p>
+            Conteúdos rápidos sobre hidratação,
+            alimentação e bem-estar.
+          </p>
+
+        </div>
+
+
+        <div class="feature-card reveal delay-3">
+
+          <div class="card-icon">
+            🏆
+          </div>
+
+          <h3>
+            Sistema de conquistas
+          </h3>
+
+          <p>
+            Ganhe pontos e conquistas ao manter
+            sua meta de hidratação.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SIMULADOR
+       ========================= -->
+
+  <section class="simulador" id="simulador">
+
+    <div class="container">
+
+      <span class="badge simulator-badge reveal">
+        Simulador
+      </span>
+
+      <h2 class="section-title reveal">
+        Quanta água você bebe por dia?
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Informe quantos copos de aproximadamente 250 ml
+        você toma por dia e veja o resultado.
+      </p>
+
+
+      <div class="sim-card reveal">
+
+        <label for="copos">
+          Copos por dia (250 ml cada)
+        </label>
+
+        <input
+          type="number"
+          id="copos"
+          class="sim-input"
+          min="0"
+          max="30"
+          value="4"
+        >
+
+        <div class="sim-actions">
+
+          <button
+            class="btn btn-verde"
+            id="calcBtn"
+            type="button"
+          >
+            Calcular consumo
+          </button>
+
+        </div>
+
+
+        <div class="sim-result" id="simResult">
+
+          <div class="litros">
+            0 L
+          </div>
+
+          <div class="msg">
+            Informe um valor e clique em calcular.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       NOVA FUNCIONALIDADE
+       DESAFIO 7 DIAS
+       ========================= -->
+
+  <section class="desafio" id="desafio">
+
+    <div class="container">
+
+      <span class="badge center-badge reveal">
+        🆕 Nova funcionalidade
+      </span>
+
+      <h2 class="section-title reveal">
+        💧 Desafio HydraLife — 7 dias
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Registre seus copos todos os dias, acompanhe seu progresso,
+        ganhe pontos e tente manter uma sequência de hidratação.
+      </p>
+
+
+      <div class="challenge-grid">
+
+
+        <!-- CARD DO DESAFIO -->
+
+        <div class="challenge-card reveal">
+
+          <div class="challenge-head">
+
+            <div>
+
+              <h3 id="challengeTitle">
+                Comece seu desafio!
+              </h3>
+
+              <p id="challengeSubtitle">
+                Complete os copos do dia para avançar.
+              </p>
+
+            </div>
+
+            <span class="day-badge" id="dayBadge">
+              Dia 1/7
+            </span>
+
+          </div>
+
+
+          <div class="progress-wrap">
+
+            <div class="progress-label">
+
+              <span>
+                Progresso de hoje
+              </span>
+
+              <span id="challengeProgressText">
+                0 / 8 copos
+              </span>
+
+            </div>
+
+
+            <div class="progress-track">
+
+              <div
+                class="progress-fill"
+                id="challengeProgress">
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- COPOS -->
+
+          <div
+            class="cups"
+            id="cups">
+          </div>
+
+
+          <div
+            class="challenge-message"
+            id="challengeMessage">
+
+            Clique nos copos para registrar sua água.
+
+          </div>
+
+
+          <div class="streak">
+
+            🔥 Sequência:
+
+            <span id="streakValue">
+              0
+            </span>
+
+            dia(s)
+
+          </div>
+
+
+          <!-- ESTATÍSTICAS -->
+
+          <div class="points-box">
+
+            <div class="point-stat">
+
+              <strong id="totalCups">
+                0
+              </strong>
+
+              Copos registrados
+
+            </div>
+
+
+            <div class="point-stat">
+
+              <strong id="totalPoints">
+                0
+              </strong>
+
+              Pontos
+
+            </div>
+
+
+            <div class="point-stat">
+
+              <strong id="badgesCount">
+                0
+              </strong>
+
+              Conquistas
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             RANKING
+             ========================= -->
+
+        <div
+          class="ranking-card reveal delay-2"
+          id="ranking">
+
+          <h3>
+            🏆 Ranking dos amigos
+          </h3>
+
+          <p>
+            Adicione seus amigos pelo nome e compare
+            quem já registrou mais copos no desafio.
+          </p>
+
+
+          <div class="friend-form">
+
+            <input
+              id="friendName"
+              type="text"
+              maxlength="20"
+              placeholder="Nome do amigo"
+            >
+
+            <button
+              class="btn btn-primary"
+              id="addFriendBtn"
+              type="button"
+            >
+              Adicionar
+            </button>
+
+          </div>
+
+
+          <div
+            class="ranking-list"
+            id="rankingList">
+          </div>
+
+
+          <div class="ranking-note">
+
+            💡 Nesta versão escolar, o ranking funciona
+            neste navegador. Para conectar pessoas de verdade
+            pela internet, seria necessário um banco de dados
+            e um sistema de login.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       DICAS
+       ========================= -->
+
+  <section class="dicas" id="dicas">
+
+    <div class="container">
+
+      <span class="badge center-badge reveal">
+        Dicas práticas
+      </span>
+
+      <h2 class="section-title reveal">
+        Como criar o hábito de beber mais água
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Pequenas mudanças na rotina podem ajudar
+        a tornar a hidratação mais fácil.
+      </p>
+
+
+      <div class="cards-grid">
+
+
+        <div class="card reveal delay-1">
+
+          <div class="card-icon">
+            🧴
+          </div>
+
+          <h3>
+            Ande com uma garrafa
+          </h3>
+
+          <p>
+            Ter uma garrafa sempre por perto facilita
+            o consumo de água durante o dia.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-2">
+
+          <div class="card-icon">
+            ⏱️
+          </div>
+
+          <h3>
+            Crie horários
+          </h3>
+
+          <p>
+            Estabeleça momentos do dia para lembrar
+            de beber água.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-3">
+
+          <div class="card-icon">
+            📱
+          </div>
+
+          <h3>
+            Use lembretes
+          </h3>
+
+          <p>
+            Alarmes e aplicativos podem ajudar
+            até que o hábito se torne natural.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-1">
+
+          <div class="card-icon">
+            🍋
+          </div>
+
+          <h3>
+            Dê sabor à água
+          </h3>
+
+          <p>
+            Frutas e ervas podem deixar a água
+            mais agradável para algumas pessoas.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-2">
+
+          <div class="card-icon">
+            🥗
+          </div>
+
+          <h3>
+            Alimentos ricos em água
+          </h3>
+
+          <p>
+            Alguns alimentos também possuem
+            bastante água em sua composição.
+          </p>
+
+        </div>
+
+
+        <div class="card reveal delay-3">
+
+          <div class="card-icon">
+            🏅
+          </div>
+
+          <h3>
+            Estabeleça metas
+          </h3>
+
+          <p>
+            Dividir sua meta em pequenas etapas
+            pode facilitar a criação do hábito.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CURIOSIDADES
+       ========================= -->
+
+  <section class="curiosidades">
+
+    <div class="container">
+
+      <span class="badge center-badge reveal">
+        Você sabia?
+      </span>
+
+      <h2 class="section-title reveal">
+        Curiosidades sobre hidratação
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Alguns fatos interessantes sobre a água
+        e sua importância para o organismo.
+      </p>
+
+
+      <div class="cards-grid">
+
+
+        <div class="curi-card reveal delay-1">
+
+          <span class="emoji">
+            🧠
+          </span>
+
+          <h3>
+            O cérebro possui muita água
+          </h3>
+
+          <p>
+            A água é um componente importante
+            do organismo e participa de diversas funções.
+          </p>
+
+        </div>
+
+
+        <div class="curi-card reveal delay-2">
+
+          <span class="emoji">
+            💓
+          </span>
+
+          <h3>
+            Hidratação e circulação
+          </h3>
+
+          <p>
+            Manter uma boa hidratação contribui
+            para o funcionamento adequado do organismo.
+          </p>
+
+        </div>
+
+
+        <div class="curi-card reveal delay-3">
+
+          <span class="emoji">
+            🌡️
+          </span>
+
+          <h3>
+            Regula a temperatura
+          </h3>
+
+          <p>
+            A água participa dos mecanismos usados
+            pelo corpo para controlar sua temperatura.
+          </p>
+
+        </div>
+
+
+        <div class="curi-card reveal delay-1">
+
+          <span class="emoji">
+            ⚡
+          </span>
+
+          <h3>
+            Disposição
+          </h3>
+
+          <p>
+            Uma rotina adequada de hidratação pode
+            ajudar na manutenção da disposição.
+          </p>
+
+        </div>
+
+
+        <div class="curi-card reveal delay-2">
+
+          <span class="emoji">
+            🦴
+          </span>
+
+          <h3>
+            Articulações
+          </h3>
+
+          <p>
+            A água participa da composição de estruturas
+            e fluidos presentes no organismo.
+          </p>
+
+        </div>
+
+
+        <div class="curi-card reveal delay-3">
+
+          <span class="emoji">
+            ✨
+          </span>
+
+          <h3>
+            Pele
+          </h3>
+
+          <p>
+            A hidratação faz parte dos cuidados
+            gerais com o corpo.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONCLUSÃO
+       ========================= -->
+
+  <section class="conclusao">
+
+    <div class="container reveal">
+
+      <h2>
+        Pequenos goles, grandes mudanças.
+      </h2>
+
+      <p>
+        Hidratar-se é um hábito simples que pode fazer
+        parte de uma rotina mais saudável. Com o HydraLife,
+        acompanhar esse hábito se torna mais prático,
+        motivador e divertido.
+      </p>
+
+      <a
+        href="#simulador"
+        class="btn btn-verde">
+
+        Testar o simulador →
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="logo">
+
+        <span class="logo-icon">
+          💧
+        </span>
+
+        Hydra<span class="accent">
+          Life
+        </span>
+
+      </div>
+
+      <p>
+        © <span id="year"></span>
+        HydraLife — Consumo Inteligente de Água.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT EXTERNO -->
   <script src="script.js"></script>
+
 </body>
+
 </html>
